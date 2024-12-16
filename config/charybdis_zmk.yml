@@ -11,5 +11,5 @@ features:
   - Trackball pointer
   - Bluetooth/USB
 siblings:
-  - charybdis_left
-  - charybdis_right
+  - charybdis_4x6_left
+  - charybdis_4x6_right
