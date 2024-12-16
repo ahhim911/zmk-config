@@ -26,3 +26,8 @@
     device = <&trackball>;
   };
 };
+
+&vtrackball {
+    status = "okay";
+    compatible = "zmk,virtual-input";
+};
