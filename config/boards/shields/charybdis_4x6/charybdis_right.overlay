@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
  
-#include "charybdis.dtsi"
+#include "charybdis_4x6.dtsi"
 
 &default_transform {
 	col-offset = <6>;
