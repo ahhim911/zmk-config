@@ -49,24 +49,14 @@
 };
 &usbd {
     status = "okay";
-};
-
-&cdc_acm_uart0 {
-    compatible = "zephyr,cdc-acm-uart";
-    status = "okay";
+    cdc_acm_uart0: cdc_acm_uart0 {
+        compatible = "zephyr,cdc-acm-uart";
+        label = "CDC_ACM_0";
+    };
 };
 
 / {
   chosen {
     zephyr,console = &cdc_acm_uart0;
   };
-};
-
-&usbd {
-  status = "okay";
-};
-
-&cdc_acm_uart0 {
-  compatible = "zephyr,cdc-acm-uart";
-  status = "okay";
 };
