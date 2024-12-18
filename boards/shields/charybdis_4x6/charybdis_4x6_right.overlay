@@ -47,6 +47,14 @@
     device = <&trackball>;
   };
 };
+&usbd {
+    status = "okay";
+};
+
+&cdc_acm_uart0 {
+    compatible = "zephyr,cdc-acm-uart";
+    status = "okay";
+};
 
 / {
   chosen {
