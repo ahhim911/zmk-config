@@ -1,0 +1,16 @@
+/ {
+    chosen {
+        zephyr,console = &cdc_acm_uart0;
+        zephyr,uart-console = &cdc_acm_uart0;
+        zephyr,uart-pipe = &cdc_acm_uart0;
+    };
+};
+
+&usbd {
+    status = "okay";
+};
+
+&cdc_acm_uart0 {
+    compatible = "zephyr,cdc-acm-uart";
+    status = "okay";
+};
