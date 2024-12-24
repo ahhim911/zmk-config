@@ -27,3 +27,10 @@
 };
 
 
+&spi0 {
+    status = "okay";
+};
+
+&trackball {
+    status = "disabled";
+};
