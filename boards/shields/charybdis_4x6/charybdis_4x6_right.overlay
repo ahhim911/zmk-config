@@ -6,6 +6,8 @@
  
 #include "charybdis_4x6.dtsi"
 #include "charybdis_pmw3610.dtsi"
+#include "split_inputs.dtsi"
+
 
 &default_transform {
 	col-offset = <6>;
@@ -36,14 +38,6 @@
     status = "okay";
 };
 
-&trackball {
-    status = "okay";
-};
-
-// https://github.com/badjeff/zmk-pmw3610-driver
-/ {
-  trackball_listener {
-    compatible = "zmk,input-listener";
+&trackball_split {
     device = <&trackball>;
-  };
 };

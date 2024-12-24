@@ -5,7 +5,6 @@
  */
 
 #include "charybdis_4x6.dtsi"
-#include "charybdis_pmw3610.dtsi"
 
 &kscan0 {
 	compatible = "zmk,kscan-gpio-matrix";
@@ -28,10 +27,3 @@
 };
 
 
-// https://github.com/badjeff/zmk-pmw3610-driver
-/ {
-  trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
-  };
-};
