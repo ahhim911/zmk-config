@@ -6,7 +6,7 @@
  
 #include "charybdis_4x6.dtsi"
 #include "charybdis_pmw3610.dtsi"
-#include "split_inputs.dtsi"
+#include "split_input.dtsi"
 
 
 &default_transform {
